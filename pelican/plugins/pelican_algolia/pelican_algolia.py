@@ -5,6 +5,7 @@ Plugin to integrate and send data to Algolia
 import hashlib
 import logging
 from pelican import signals
+
 from algoliasearch.search_client import SearchClient
 
 
