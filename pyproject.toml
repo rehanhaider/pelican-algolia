@@ -30,7 +30,7 @@ classifiers = [
 python = ">=3.6.2,<4.0"
 pelican = ">=4.5"
 markdown = {version = ">=3.2", optional = true}
-algoliasearch = ">2.6.0"
+algoliasearch = ">=2.6.0"
 
 
 [tool.poetry.dev-dependencies]
