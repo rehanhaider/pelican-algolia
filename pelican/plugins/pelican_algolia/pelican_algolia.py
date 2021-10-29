@@ -4,10 +4,10 @@ Plugin to integrate and send data to Algolia
 
 import hashlib
 import logging
-from pelican import signals
 
 from algoliasearch.search_client import SearchClient
 
+from pelican import signals
 
 logger = logging.getLogger()
 
@@ -38,7 +38,9 @@ def main(generator, writer):
             records["content"] = article.content
             records["category"] = article.category
             logger.debug("Adding Algolia object...")
-            records["objectID"] = hashlib.sha256(str(article.slug).encode("utf-8")).hexdigest()
+            records["objectID"] = hashlib.sha256(
+                str(article.slug).encode("utf-8")
+            ).hexdigest()
             index.save_objects([records])
         logger.debug("Indexing complete...")
     else:
