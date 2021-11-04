@@ -54,8 +54,8 @@ markdown = ["markdown"]
 
 [tool.autopub]
 project-name = "Algolia Search"
-git-username = "botpub"
-git-email = "botpub@autopub.rocks"
+git-username = "rehanhaider"
+git-email = "email@rehanhaider.com"
 
 [tool.isort]
 # Maintain compatibility with Black
