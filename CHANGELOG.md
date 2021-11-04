@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+1.0.0 - 2021-11-04
+------------------
+
+First Stable Release of Pelican Algolia Plugin
+
 0.0.2 - 2021-11-04
 ------------------
 
