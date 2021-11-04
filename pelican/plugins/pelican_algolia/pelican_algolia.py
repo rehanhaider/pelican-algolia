@@ -1,13 +1,13 @@
 """
-Plugin to integrate and send data to Algolia
+# --*-- coding: utf-8 --*--
+# Plugin to integrate and send data to Algolia
 """
 
-import hashlib
 import logging
-
+import hashlib
+from pelican import signals
 from algoliasearch.search_client import SearchClient
 
-from pelican import signals
 
 logger = logging.getLogger()
 
@@ -28,19 +28,20 @@ def main(generator, writer):
 
         for article in generator.articles:
             print(f"Indexing article: {article.title}")
-            records = {}
-            records["title"] = article.title
-            records["slug"] = article.slug
-            records["url"] = article.url
-            records["tags"] = []
+            records = {
+                "title": article.title,
+                "slug": article.slug,
+                "url": article.url,
+                "tags": [],
+                "content": article.content,
+                "category": article.category,
+            }
+
             for tag in getattr(article, "tags", []):
                 records["tags"].append(tag.name)
-            records["content"] = article.content
-            records["category"] = article.category
+
             logger.debug("Adding Algolia object...")
-            records["objectID"] = hashlib.sha256(
-                str(article.slug).encode("utf-8")
-            ).hexdigest()
+            records["objectID"] = hashlib.sha256(str(article.slug).encode("utf-8")).hexdigest()
             index.save_objects([records])
         logger.debug("Indexing complete...")
     else:
