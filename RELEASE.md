@@ -1,3 +1,3 @@
-Release type: major
+Release type: patch
 
-Plugin to use Algolia search with Pelican
+Still testing if this is working
