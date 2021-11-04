@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+2.0.4 - 2021-11-04
+------------------
+
+Add function to update version strings in multiple files.
+
 2.0.3 - 2021-11-04
 ------------------
 
