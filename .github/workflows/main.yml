@@ -67,7 +67,7 @@ jobs:
   deploy:
     name: Deploy
     environment: Deployment
-    needs: [lint]
+    #needs: [lint]
     runs-on: ubuntu-latest
     if: ${{ github.ref=='refs/heads/main' && github.event_name!='pull_request' }}
 
@@ -89,6 +89,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
         run: |
+          echo "https://$GITHUB_TOKEN@github.com/${{ github.repository }}"
           git remote set-url origin https://$GITHUB_TOKEN@github.com/${{ github.repository }}
           autopub prepare
           poetry build
