@@ -92,5 +92,4 @@ jobs:
           autopub prepare
           poetry build
           autopub commit
-          autopub githubrelease
           poetry publish -u __token__ -p $PYPI_PASSWORD
