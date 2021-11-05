@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+2.2.0 - 2021-11-05
+------------------
+
+Added documentation on creating search bars
+
 2.1.0 - 2021-11-04
 ------------------
 
