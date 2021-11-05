@@ -41,6 +41,13 @@ import os
 ALGOLIA_ADMIN_API_KEY = os.environ.get("ALGOLIA_ADMIN_API_KEY")
 ```
 
+Building Search bars
+---------------------
+You can read through [Algolia] documentation on how to build InstaSearch experience, or use a legacy version of search bar (example below) described in detail [here].
+
+[Algolia]: https://www.algolia.com/doc/guides/building-search-ui/getting-started/js/
+[here]: https://cloudbytes.dev/snippets/launching-pelican-algolia-plugin-for-pelican
+
 Contributing
 ------------
 

@@ -1,3 +1,3 @@
 Release Type: minor
 
-A working prototype
+Added documentation on creating search bars
