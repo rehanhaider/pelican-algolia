@@ -4,7 +4,7 @@ Algolia Search: A Plugin for Pelican
 [![Build Status](https://img.shields.io/github/workflow/status/rehanhaider/pelican-algolia/build)](https://github.com/rehanhaider/pelican-algolia/actions)
 [![PyPI Version](https://img.shields.io/pypi/v/pelican-algolia)](https://pypi.org/project/pelican-algolia/)
 ![License](https://img.shields.io/pypi/l/pelican-algolia?color=blue)
-
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pelican-algolia)
 
 Installation
 ------------
