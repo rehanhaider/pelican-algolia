@@ -1,6 +1,6 @@
 """
 # --*-- coding: utf-8 --*--
-# Plugin to integrate and send data to Algolia
+# Pelican Plugin to integrate Algolia and send data to it
 """
 
 import logging
